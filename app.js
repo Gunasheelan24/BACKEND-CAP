@@ -14,12 +14,12 @@ app.use(express.static("./dist"));
 app.use(
   cors({
     credentials: true,
-    origin: "https://parisairwaysguna.onrender.com",
+    origin: "https://parisairwaysgunasheelan.onrender.com",
     methods: ["GET", "POST"],
   })
 );
 app.options(
-  "https://parisairwaysguna.onrender.com",
+  "https://parisairwaysgunasheelan.onrender.com",
   cors({ preflightContinue: true })
 );
 app.use(upload.single("photo"));
